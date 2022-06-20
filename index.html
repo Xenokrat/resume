@@ -7,69 +7,98 @@
     <meta name="keywords" content="pavel, cv, resume">
     <meta name="description" content="Project for future Pavel's cv cite">
     <title>Павел CV</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
-    <img src="images/my_photo.jpg" alt="There should be my photo" width="200">
-    <h1>Павел Барабанов</h1>
 
-    <p><strong>Аналитик данных</strong>, свитч в разработку.</p>
+<div class="container">
 
-    <p>Интересует разработка на <em>Python, R</em>, также изучение <em>JS</em></p>
+    <div class="person_info">
+        <img src="images/my_photo.jpg" alt="There should be my photo" class="avatar">
+        <div class="info_text">
+            <h1>Павел Барабанов</h1>
 
-    <h2>Социальные сети</h2>
-    <a href="https://vk.com/id187422656" target="_blank">VK</a> | <a href="https://t.me/Barabanovpv" target="_blank">Telegram</a>
+            <p>Аналитик данных, свитч в разработку.</p>
+            <p>Интересует разработка на <em>Python, R</em>, также изучение <em>JS</em></p>
 
-    <ol>
-        <li>Чтение</li>
-        <li>Настольные игры</li>
-        <li>Кемпинг</li>
-    </ol>
+            <h4>Социальные сети</h4>
+            <a href="https://vk.com/id187422656" target="_blank">VK</a> | <a href="https://t.me/Barabanovpv" target="_blank">Telegram</a>
+        </div>
+    </div>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Название</th>
-                <th>Должность</th>
-                <th>Год</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Монокристалл</td>
-                <td>Менеджер по тех.развитию</td>
-                <td>2018-2020</td>
-            </tr>
-                <td>Монокристалл</td>
-                <td>Инженер по тех.поддержке потребителей</td>
-                <td>2020-2021</td>
-            </tr>
-                <td>DEF team</td>
-                <td>Аналитик</td>
-                <td>2022-сейчас</td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="block hobby"> 
+        <h2 class="header2">Мои хобби</h2>
+        <ol class="list_ol">
+            <li>Чтение</li>
+            <li>Настольные игры</li>
+            <li>Кемпинг</li>
+        </ol>
+    </div>
+    
 
-    <h1>Связаться со мной</h1>
+    <div class="block exp">
+        <h2 class="header2">Опыт работы</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Монокристалл</td>
+                    <td>Менеджер по тех.развитию</td>
+                    <td>2018 - 2020</td>
+                </tr>
+                    <td>Монокристалл</td>
+                    <td>Инженер по тех.поддержке потребителей</td>
+                    <td>2020 - 2021</td>
+                </tr>
+                    <td>DEF team</td>
+                    <td>Аналитик</td>
+                    <td>2022 - сейчас</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
-    <form>
-        <div>
-            <label for="name">Введите имя</label>
-            <input type="text" id="name" placeholder="Введите имя">
+    <div class="block course">
+        <h2 class="header2">Мои курсы</h2>
+        <ul class="list_ul">
+            <li><a href="https://lab.karpov.courses/certificate/6c814f60-a533-4442-b71b-7bee57e01469/">Аналитик данных Karpov.Courses</a></li>
+            <li><a href="https://stepik.org/cert/1194348">Введение в Data Science и машинное обучение</a></li>
+            <li><a href="https://stepik.org/cert/1263547">Основы статистики</a></li>
+        </ul>
+    </div>
+
+
+        
+    <form class="contacts">
+        <h2>Связаться со мной</h2>
+        
+        <div class="contacts_row">
+            <div class="contacts_group">
+                <label for="name">Введите имя</label>
+                <input type="text" id="name" placeholder="Введите имя">
+            </div>
+
+            <div class="contacts_group">
+                <label for="email">Введите email</label>
+                <input type="email" id="email" placeholder="Введите email">
+            </div>
         </div>
 
-        <div>
-            <label for="email">Введите email</label>
-            <input type="email" id="email" placeholder="Введите email">
-        </div>
-
-        <div>
+        <div class="contacts_group">
             <label for="message">Введите сообщение</label>
-            <br>
             <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
         </div>
 
-        <button>Отправить!</button>
+        <button class="btn">Отправить!</button>
 
-    </form>
+    </form>   
+</div>
+
 </body>
 </html>
